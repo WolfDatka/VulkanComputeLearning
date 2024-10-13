@@ -1,0 +1,11 @@
+# Extensions
+*.sln
+*.vcxproj
+*.user
+*.filters
+
+# Dirs
+.vs
+Thinking
+Bin
+Obj
