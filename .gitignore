@@ -3,6 +3,7 @@
 *.vcxproj
 *.user
 *.filters
+c_cpp_properties.json
 
 # Dirs
 .vs

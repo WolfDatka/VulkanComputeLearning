@@ -8,6 +8,7 @@ workspace "VulkanComputeLearning"
     }
 
 outputDir = "%{cfg.buildcfg}-%{cfg.system}-%{cfg.architecture}"
+vulkanDir = "C:/VulkanSDK/1.3.296.0/"
 
 project "Basics"
     location "Basics"
@@ -24,6 +25,15 @@ project "Basics"
 
     includedirs {
         "%{prj.location}/Headers/",
+        vulkanDir .. "Include/",
+    }
+
+    libdirs {
+        vulkanDir .. "Lib/",
+    }
+
+    links {
+        "vulkan-1",
     }
 
     filter "system:windows"
