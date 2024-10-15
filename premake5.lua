@@ -1,4 +1,4 @@
-workspace "VulkanComputeLearning"
+workspace "VulkanLearning"
     architecture "x64"
 
     configurations {
@@ -26,14 +26,17 @@ project "Basics"
     includedirs {
         "%{prj.location}/Headers/",
         vulkanDir .. "Include/",
+        "%{wks.location}/Vendor/Include/",
     }
 
     libdirs {
         vulkanDir .. "Lib/",
+        "%{wks.location}/Vendor/Lib",
     }
 
     links {
         "vulkan-1",
+        "glfw3",
     }
 
     filter "system:windows"
