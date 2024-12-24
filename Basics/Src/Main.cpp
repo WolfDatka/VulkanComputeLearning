@@ -1,6 +1,6 @@
 #include "Main.h"
 
-int main() {
+/* int main() {
     HelloTriangleApplication app;
 
     try {
@@ -12,9 +12,8 @@ int main() {
     }
 
     return EXIT_SUCCESS;
-}
+} */
 
-/* 
 int main(int argc, char const *argv[]) {
     glfwInit();
 
@@ -40,4 +39,3 @@ int main(int argc, char const *argv[]) {
 
     return 0;
 }
- */

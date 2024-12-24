@@ -58,10 +58,10 @@ bool HelloTriangleApplication::CheckValidationLayerSupport() {
 }
 
 void HelloTriangleApplication::CreateInstance() {
-    DEBUG_COUT_FUNC("Started creating vulkan instance...");
+    DEBUG_COUT_FUNC("[LOG]: Started creating vulkan instance...");
 
-    if (enableValidationLayers && !CheckValidationLayerSupport()) {
-        throw std::runtime_error("Validation layers requested, but not available!");
+    if (enableValidationLayers || !CheckValidationLayerSupport()) {
+        throw std::runtime_error("[ERR]: Validation layers requested, but not available!");
     }
 
     VkApplicationInfo appInfo{};
